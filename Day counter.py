@@ -3,10 +3,12 @@
 from tkinter import *
 from datetime import *
 import turtle
-                                              # Day counter project
+                                              '''    
+                                                  Day counter project
   
-                                              #it help to count girls period days
-                                              #it help to count any product purchasing dayg like as phone, sim card.... etc
+                                              -> it helps to count, girls previous or future period day
+                                              -> it helps to count, any product purchasing days like as phone, sim card.... etc
+                                                                                                                                   '''
                                             
 
 #manual Day count
