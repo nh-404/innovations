@@ -1,8 +1,12 @@
 #import module
-
 from tkinter import *
 
-   #variable define
+                                                     '''  Bangladeshi mobile financial service cashout charge calculator (MFS)
+                                                          
+                                                         -> it helps to user calculate all MFS cashout charge in one click
+                                                                                                                             '''
+
+#variable define
 
 Input = ''
 
@@ -128,7 +132,7 @@ def clear_feild():
     lable.delete(1.0,'end')
 
 
-                                            #Geaphics Driver Code
+                                                                #Geaphics Driver Code
 
 # window scaling
 
@@ -217,7 +221,6 @@ nagad_button =Button(window,text=" Bkash App ",height=3, width=7, font=('Arial',
 nagad_button.grid(row=7,column=1)
 
 window.mainloop()
-
 
 
 #Created by:
