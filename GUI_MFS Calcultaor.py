@@ -1,10 +1,10 @@
 #import module
 from tkinter import *
 
-                                                     '''  Bangladeshi mobile financial service cashout charge calculator (MFS)
+                                                     #  Bangladeshi mobile financial service cashout charge calculator (MFS)
                                                           
-                                                         -> it helps to user calculate all MFS cashout charge in one click
-                                                                                                                             '''
+                                                     #    -> it helps to user calculate all MFS cashout charge in one click
+                                                                                                                            
 
 #variable define
 
