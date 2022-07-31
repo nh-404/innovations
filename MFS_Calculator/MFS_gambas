@@ -1,0 +1,46 @@
+' Gambas class file MFs
+
+Public Sub Nadad)USSD()
+
+  Dim add As Float
+  add = Val(TextBox1.text) * 0.0150
+  TextBox1.text = add
+
+End
+
+Public Sub Bkash_App()
+
+  Dim add As Float
+  add = Val(TextBox1.text) * 0.0175
+  TextBox1.text = add
+
+End
+
+Public Sub Bkash_USSD()
+
+  Dim add As Float
+  add = Val(TextBox1.text) * 0.0185
+  TextBox1.text = add
+
+End
+
+Public Sub Bkash_fav()
+
+  Dim add As Float
+  add = Val(TextBox1.text) * 0.0149
+  TextBox1.text = add
+End
+
+Public Sub Nagad_App()
+
+  Dim add As Float
+  add = Val(TextBox1.text) * 0.01149
+  TextBox1.text = add
+
+End
+
+Public Sub clear()
+
+  TextBox1.Clear
+
+End
