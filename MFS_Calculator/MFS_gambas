@@ -1,6 +1,6 @@
 ' Gambas class file MFs
 
-Public Sub Nadad)USSD()
+Public Sub Nagad_USSD()
 
   Dim add As Float
   add = Val(TextBox1.text) * 0.0150
