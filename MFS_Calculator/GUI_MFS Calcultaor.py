@@ -201,7 +201,7 @@ button_clear.grid(row=5,column=4)
 button_clear1=Button(window,text=" ",height=3, width=7, font=('Arial',14),bg="light pink")
 button_clear1.grid(row=6,column=4)
 
-button_clear2=Button(window,text=" ",height=3, width=7, font=('Arial',14),bg="light pink")
+button_clear2=Button(window,text="Exit",height=3, width=7, font=('Arial',14),bg="red",command= window.destroy)
 button_clear2.grid(row=7,column=4)
 
 Dot_button = Button(window,text=".",height=2, width=7, font=('Arial',14),bg="#D1EDEF",command=lambda:data('.'))
@@ -218,6 +218,8 @@ bkash_button2.grid(row=7,column=2)
 
 nagad_button =Button(window,text=" Bkash App ",height=3, width=7, font=('Arial',14),bg="#D1EDEF",command=BkashApp)
 nagad_button.grid(row=7,column=1)
+
+
 
 window.mainloop()
 
