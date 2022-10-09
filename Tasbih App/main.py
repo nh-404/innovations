@@ -12,7 +12,7 @@ from kivy.properties import StringProperty
 
 class gridLayout(GridLayout):
 
-# define counting varibale
+# define counting variable
     count = 0
     count_en =False
     labelView= StringProperty('0')
