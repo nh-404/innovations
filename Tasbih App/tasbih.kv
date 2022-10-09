@@ -1,0 +1,66 @@
+gridLayout:
+<gridLayout>:
+    cols:3
+    rows:4
+
+    ToggleButton:
+        text:'off'
+        on_state: root.toggle(self)
+        
+    Button:
+        text: 'Subhanallah'
+        on_press: root.onClick()
+
+    Label:
+        text:root.labelView
+        font_name:'rb.ttf'
+        font_size: '80dp'
+        color: 0,64,27,1
+
+
+
+
+    ToggleButton:
+        text:'off'
+        on_state: root.toggle2(self)
+
+    Button:
+        text: 'Alhumdulillah'
+        on_press: root.onClick2()
+
+    Label:
+        text:root.labelView2
+        font_name:'rb.ttf'
+        font_size: '80dp'
+        color: 0,64,27,1
+
+
+
+
+
+    ToggleButton:
+
+        text:'off'
+        on_state: root.toggle3(self)
+
+    Button:
+        text: 'Allahu Akbar'
+        on_press: root.onClick3()
+
+    Label:
+        text:root.labelView3
+        font_name:'rb.ttf'
+        font_size: '80dp'
+        color: 0,64,27,1
+
+
+    Label:
+        text:'Total Count'
+        color: 0,64,27,2
+
+
+    Label:
+        text:root.labelView4
+        font_name:'rb.ttf'
+        font_size: '80dp'
+        color: 0,64,27,1
