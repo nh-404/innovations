@@ -6,10 +6,13 @@ gridLayout:
     ToggleButton:
         text:'off'
         on_state: root.toggle(self)
+        size_hint: None,1
+        width: '108dp'
         
     Button:
         text: 'Subhanallah'
         on_press: root.onClick()
+        disabled: not root.count_en
 
     Label:
         text:root.labelView
@@ -23,10 +26,13 @@ gridLayout:
     ToggleButton:
         text:'off'
         on_state: root.toggle2(self)
+        size_hint: None,1
+        width: '108dp'
 
     Button:
         text: 'Alhumdulillah'
         on_press: root.onClick2()
+        disabled: not root.count_en2
 
     Label:
         text:root.labelView2
@@ -42,10 +48,13 @@ gridLayout:
 
         text:'off'
         on_state: root.toggle3(self)
+        size_hint: None,1
+        width: '108dp'
 
     Button:
         text: 'Allahu Akbar'
         on_press: root.onClick3()
+        disabled: not root.count_en3
 
     Label:
         text:root.labelView3
@@ -57,10 +66,14 @@ gridLayout:
     Label:
         text:'Total Count'
         color: 0,64,27,2
+        font_size: '21dp'
 
+    Label:
+        text:''
 
     Label:
         text:root.labelView4
         font_name:'rb.ttf'
         font_size: '80dp'
+        background_color: 1,54,25,1
         color: 0,64,27,1
