@@ -6,23 +6,23 @@ from kivy.uix.label import Label
 from kivy.uix.widget import Widget
 from kivy.app import App
 from kivy.properties import StringProperty
-
+from kivy.properties import BooleanProperty
 
 #define App Layout
 
 class gridLayout(GridLayout):
 
-# define counting variable
+# define counting varibale
     count = 0
-    count_en =False
+    count_en =BooleanProperty(False)
     labelView= StringProperty('0')
 
     count2 = 0
-    count_en2 =False
+    count_en2 =BooleanProperty(False)
     labelView2= StringProperty('0')
 
     count3 = 0
-    count_en3 =False
+    count_en3 =BooleanProperty(False)
     labelView3= StringProperty('0')
 
     labelView4= StringProperty('0')
