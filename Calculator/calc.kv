@@ -1,0 +1,117 @@
+<Bxly>:
+    orientation: 'vertical'
+    
+    TextInput:
+        id: clc_field
+        height: 400
+        size_hint: (1,None)
+        readonly: False
+        disable: True
+        font_size: 65
+    GridLayout:
+        rows:5
+        columns: 4
+        padding: 10
+        spacing: 10
+        height: 400
+        size_hint: (1,None)
+
+        Button:
+            text: '1'
+            font_size:25
+            on_press: root.calculator('1')
+
+        Button:
+            text: '2'
+            font_size:25
+            on_press: root.calculator('2')
+
+            
+        Button:
+            text: '3'
+            font_size:25
+            on_press: root.calculator('3')
+
+            
+        Button:
+            text: '+'
+            font_size:25
+            on_press: root.calculator('+')
+
+            
+        Button:
+            text: '4'
+            font_size:25
+            on_press: root.calculator('4')
+
+            
+        Button:
+            text: '5'
+            font_size:25
+            on_press: root.calculator('5')
+
+            
+        Button:
+            text: '6'
+            font_size:25
+            on_press: root.calculator('6')
+
+            
+        Button:
+            text: '-'
+            font_size:25
+            on_press: root.calculator('-')
+
+            
+        Button:
+            text: '7'
+            font_size:25
+            on_press: root.calculator('7')
+
+            
+        Button:
+            text: '8'
+            font_size:25
+            on_press: root.calculator('8')
+
+            
+        Button:
+            text: '9'
+            font_size:25
+            on_press: root.calculator('9')
+
+            
+        Button:
+            text: '/'
+            font_size:25
+            on_press: root.calculator('/')            
+
+                    
+        Button:
+            text: '.'
+            font_size:25
+            on_press: root.calculator('.')  
+
+                        
+        Button:
+            text: '0'
+            font_size:25
+            on_press: root.calculator('0')  
+
+                        
+        Button:
+            text: 'Clear'
+            font_size:25
+            on_press: root.clear()  
+
+                        
+        Button:
+            text: '='
+            font_size:25
+            on_press: root.eql()  
+
+        Button:
+            text: 'Exit'
+            font_size: 25
+            background_color: 1,0,0,1
+            on_press: root.exit()
