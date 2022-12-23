@@ -1,0 +1,119 @@
+<Label>:
+    markup: True
+
+<Button>:
+    background_normal: ''
+    background_color: 0,0,0,0
+    font_size: 45
+
+<RoundedButton@Button>
+    canvas.before:
+        Color:
+            rgba: 10, 10, 1, 3
+
+        RoundedRectangle:
+            size: self.size
+            pos: self.pos
+            radius: [15]
+
+<RoundedButton1@Button>
+    canvas.before:
+        Color:
+            rgba:0,0.5,0.5,1
+
+        RoundedRectangle:
+            size: self.size
+            pos: self.pos
+            radius: [15]
+
+<RoundedButton2@Button>
+    canvas.before:
+        Color:
+            rgba: 1, 0.1, 0.2, 1
+
+        RoundedRectangle:
+            size: self.size
+            pos: self.pos
+            radius: [15]
+
+<TabbedPanelItem>:
+        
+    background_color: '#4b0082'
+    font_size: 16
+
+TabbedPanel:
+    do_default_tab: False
+    background_color: 0,0.5,0.9,1
+    
+    TabbedPanelItem:
+        text: 'clock'
+        background_color: '#4b0082'
+
+        BoxLayout:
+            orientation: 'vertical'   
+
+            Label:
+                id: time
+                text: '00:00'
+                font_size: 152
+                color: 0,1,0.5,1
+                halign:'center'
+
+            RoundedButton2:
+                id: exitt
+                text: 'Exit'
+                color: 0,0,0,100
+                font_size:25
+                size_hint: (0.22,None)
+                size: (500,35)
+                
+
+                    
+                on_press: app.exit()
+
+
+    TabbedPanelItem:
+        text: 'Stopwatch'
+        background_color: '#4b0082'
+
+        BoxLayout:
+            orientation: 'vertical'
+
+            Label:
+                id: stopWatch
+                text: '00:00:00'
+                font_size: 152
+                color: 1,0.9,0.9,1
+                halign:'center'
+
+            BoxLayout:
+
+                orientation: 'horizontal'
+                halign: 90
+                padding: 20
+                spaecing: 10
+                size_hint: (1,None)
+
+                RoundedButton:
+                    id: start_stop
+                    text: 'Start'
+                    color: 10, 10, 1, 3
+                    font_size:25
+                    on_press: app.stop_start()
+
+
+                RoundedButton1:
+                    id: reset
+                    text: 'Reset'
+                    color: 0, 0, 0, 100
+                    font_size:25
+                    on_press: app.reset()
+
+
+                RoundedButton2:
+                    id: exitt
+                    text: 'Exit'
+                    color: 0,0,0,100
+                    font_size:25
+                    size: (400,25)
+                    on_press: app.exit()
