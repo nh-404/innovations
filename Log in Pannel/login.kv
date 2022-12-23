@@ -1,0 +1,28 @@
+MDScreen:
+    md_bg_color:[35/255,49/255, 51/255,1]
+    
+    MDCard:
+        size_hint: None,None
+        size: 320,400
+        pos_hint: {'center_x':0.5, 'center_y':0.5}
+        elevation:15
+        md_bg_color:[35/255,49/255,84/255,1]
+        padding: 20
+        spacing: 30
+        orentarion: 'vertical'
+
+        MDLabel:
+            text: 'Log in'
+            font_style: 'Button'
+            font_size: 45
+            halign: 'center'
+            size_hint_y : None
+            height: self.texture_size[1]
+
+        MDRoundFlatButton:
+            text: 'sign'
+        Widget: 
+            size_hint_y: None
+            height: 30
+
+        
