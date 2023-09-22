@@ -1,2 +1,2 @@
 # innovations
-sefl implement new project
+self implemented new project
